@@ -201,7 +201,47 @@ public class Main {
 		
 		
 		
+		import java.util.*;
+import java.util.Scanner;
+
+
+public class Main {
+	public static void main(String[] args)
+	{
+		int n = 0;
 		
+		Scanner s = new Scanner(System.in);
+		
+		n = s.nextInt();
+		
+		int[] a;
+		int[] b;
+		
+		int sum = 0;
+		
+		a = new int[n];
+		b = new int[n];
+		
+		for(int i = 0; i < n ; i++) {
+			a[i] = s.nextInt();
+			b[i] = s.nextInt();
+		}
+		
+		for(int i = 0; i<n ; i++) {
+			if(a[i] > b[i]) {
+				sum = sum + a[i];
+			}
+			else if(a[i] < b[i]) {
+				sum = sum + b[i];
+			}
+		}
+		
+		
+		
+		System.out.println(sum);
+		
+	}
+}
 		
 		
 		
